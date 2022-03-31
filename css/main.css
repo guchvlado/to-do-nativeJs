@@ -5,28 +5,48 @@
 }
 .header {
     text-align: center;
-    margin-top: 100px;
-    border-bottom: 1px solid #000;
     padding-bottom: 15px;
-}
-.header input {
-    padding: 10px 100px;
-}
-.header .button {
-    padding: 10px 100px;
+    width: 33vw;
+    margin: 100px auto 0;
 }
 .header .button:hover {
     cursor: pointer;
 }
 .tabs {
     display: flex;
-    justify-content: space-between;
+    margin-bottom: 25px;
 }
 .tab {
     border: 1px #000 solid;
     padding: 10px 25px;
+    flex: 1;
+    text-transform: uppercase;
+    transition: all .3s ease-out;
+}
+.tab:hover {
+    cursor: pointer;
+    background-color: rgb(189, 177, 177);
+}
+.tab.active-tab {
+    background-color: rgb(145, 135, 135);
 }
 
+.input-form {
+    display: flex;
+}
+.input-form > input{
+    flex: 2;
+    height: 35px;
+}
+.input-form > button {
+    flex: 1;
+    height: 35px;
+}
+
+.task-list::before {
+    content: "";
+    border-bottom: 1px solid #000;
+}
 .task-list {
     display: flex;
     flex-direction: column;

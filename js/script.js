@@ -43,4 +43,14 @@ document.addEventListener("DOMContentLoaded", () => {
             updateList();
         }
     });
+
+    const tabsConteiner = document.querySelector(".tabs"),
+          tabs = document.querySelectorAll('.tab');
+
+    tabsConteiner.addEventListener("click", (e) => {
+        if (e.target && e.target.classList.contains("tab")) {
+            tabs.forEach(item => item.classList.remove('active-tab'));
+            e.target.classList.add('active-tab');
+        }
+    });
 });

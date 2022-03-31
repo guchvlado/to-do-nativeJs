@@ -8,13 +8,16 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    
     <form class="header">
         <div class="tabs">
-            <div class="tab">to do</div>
-            <div class="tab">done</div>
+            <div id="do" class="tab active-tab">to do</div>
+            <div id="done" class="tab">done</div>
         </div>
-        <input id="taskName" type="text">
-        <button class="button" type="submit">Add</button>
+        <div class="input-form">
+            <input id="taskName" type="text">
+            <button class="button" type="submit">Add</button>
+        </div>
     </form>
 
     <div class="task-list">
