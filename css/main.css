@@ -41,6 +41,7 @@
 .input-form > button {
     flex: 1;
     height: 35px;
+    text-transform: uppercase;
 }
 
 .task-list::before {
@@ -60,10 +61,15 @@
     justify-content: space-between;
     align-items: center;
 }
-.close-button {
+.change-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 50px;
+}
+.close-button, .done-button {
     transition: transform ease-out .2s;
 }
-.close-button:hover {
+.close-button:hover,  .done-button:hover {
     cursor: pointer;
     transform: scale(1.5);
 }
